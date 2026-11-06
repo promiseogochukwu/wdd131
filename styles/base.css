@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a3a5a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#course-title {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    padding: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #ffcc00;
+    color: #000;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #1a3a5a;
+    margin-bottom: 0.5rem;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: #1a3a5a;
+    color: white;
+    text-align: center;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+}
+
+.card p, .card ul {
+    padding: 1rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card ul {
+    list-style-position: inside;
+}
+
+footer {
+    background-color: #1a3a5a;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer p {
+    margin: 0.3rem;
+}

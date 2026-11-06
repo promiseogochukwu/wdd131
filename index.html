@@ -1,10 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>WDD 131 - Promise Ogochukwu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Promise Ogochukwu</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Promise Ogochukwu - Home page with about me and web development resources">
+    <meta name="author" content="Promise Ogochukwu">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-  <h1>Hello, this is my WDD 131 test page</h1>
-  <p>My setup is working!</p>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Promise Ogochukwu</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.jpeg" alt="Photo of Promise Ogochukwu" width="200" height="200">
+            <p>My name is Promise Ogochukwu. I live in Abuja, Nigeria. I love learning about web development and I am excited to learn how to build dynamic websites in WDD 131. In my free time, I enjoy spending time with family and learning new skills.</p>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Promise Ogochukwu - Abuja, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
