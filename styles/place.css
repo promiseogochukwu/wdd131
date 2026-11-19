@@ -90,6 +90,17 @@ footer p {
     margin: 0.3rem;
 }
 
+/* ::after pseudo-element */
+.data h2::after,
+.weather h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--green);
+    margin: 0.5rem auto 0;
+}
+
 /* Wider screens */
 @media (min-width: 1000px) {
     main {
@@ -137,4 +148,11 @@ footer p {
         height: 60px;
         margin: 0 auto 0.5rem;
     }
+
+    .data h2::after,
+    .weather h2::after {
+        background-color: var(--white);
+        margin-left: 0;
+    }
+
 }
