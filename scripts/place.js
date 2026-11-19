@@ -7,7 +7,7 @@ const today = new Date();
 currentYear.textContent = today.getFullYear();
 lastModified.textContent = `Last Modification: ${document.lastModified}`;
 
-const temperature = 9;
+const temperature = 32;
 const windSpeed = 8;
 
 function calculateWindChill(temp, speed) {
