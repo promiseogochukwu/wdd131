@@ -1,10 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Nigeria's country information, including its population, capital, languages, and weather conditions.">
+    <meta name="description"
+        content="Explore Nigeria's country information, including its population, capital, languages, and weather conditions.">
     <meta name="author" content="Promise Ogochukwu">
 
     <title>Nigeria | WDD 131</title>
@@ -22,10 +23,7 @@
         <picture class="hero">
             <source srcset="images/nigeria-large.webp" media="(min-width: 1000px)">
             <source srcset="images/nigeria-medium.webp" media="(min-width: 550px)">
-            <img src="images/nigeria-small.webp"
-                 alt="Lagos city skyline in Nigeria"
-                 width="600"
-                 height="400">
+            <img src="images/nigeria-small.webp" alt="Lagos city skyline in Nigeria" width="600" height="400">
         </picture>
 
         <section class="data">
@@ -45,6 +43,21 @@
         <section class="weather">
             <h2>Weather</h2>
 
+            <!-- Inline SVG weather icon - partly cloudy -->
+            <svg class="weather-icon" viewBox="0 0 64 64" width="60" height="60" role="img" aria-label="Partly cloudy">
+                <circle cx="22" cy="22" r="12" fill="#FFC107" />
+                <g fill="#FFC107">
+                    <rect x="20" y="2" width="4" height="6" rx="2" />
+                    <rect x="20" y="36" width="4" height="6" rx="2" />
+                    <rect x="2" y="20" width="6" height="4" rx="2" />
+                    <rect x="36" y="20" width="6" height="4" rx="2" />
+                    <rect x="8" y="8" width="4" height="6" rx="2" transform="rotate(-45 10 11)" />
+                    <rect x="32" y="8" width="4" height="6" rx="2" transform="rotate(45 34 11)" />
+                </g>
+                <path d="M18 52 a12 12 0 0 1 2.5 -23.7 A15 15 0 0 1 50 36 a10 10 0 0 1 -4 16 Z" fill="#ffffff"
+                    stroke="#90A4AE" stroke-width="2" stroke-linejoin="round" />
+            </svg>
+
             <ul>
                 <li><span class="label">Temperature:</span> <span id="temperature">32 °C</span></li>
                 <li><span class="label">Conditions:</span> Partly Cloudy</li>
@@ -59,4 +72,5 @@
         <p id="lastModified"></p>
     </footer>
 </body>
+
 </html>
